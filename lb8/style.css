@@ -1,0 +1,24 @@
+body {
+	font-family: Arial;
+	line-height: 1.5em;
+	margin-inline: 1.5em;
+	text-align: justify;
+}
+
+p {
+	text-indent: 1.5em;
+}
+
+div {
+	border: 2px black inset;
+	margin-inline: 0;
+	padding-inline: 1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
