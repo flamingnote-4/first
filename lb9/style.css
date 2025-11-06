@@ -1,0 +1,49 @@
+body {
+	font-family: Arial;
+	line-height: 1.5em;
+	margin: 1em;
+	text-align: justify;
+}
+
+h2 {
+	margin-left: 0.2em;
+	padding: 0.3em;
+}
+
+/*09-1*/
+
+.header1 {box-shadow: -0.2em 0 0 red;}
+.header2 {box-shadow: -0.2em 0 0 green;}
+.header3 {box-shadow: -0.2em 0 0 blue;}
+
+/*09-2*/
+
+.chapter {
+	text-align: center;
+}
+
+.text {
+	border: 4px outset green;
+}
+
+.footnote {
+	margin-left: 1em;
+}
+
+/*09-3*/
+
+.menu {
+	background-color: #eee;
+	border: 4px #ccc solid;
+	padding: 0.5em;
+	border-radius: 0.5em;
+}
+
+.small{
+	display: flex;
+	background-color: #ffa;
+	border: 2px #cc6 solid;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	font-size: 0.8em;
+}
