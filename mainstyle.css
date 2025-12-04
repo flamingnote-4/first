@@ -15,6 +15,7 @@ table {
 	border: 4px black inset;
 	border-collapse: collapse;
 	margin: auto;
+	line-height: 1em;
 }
 td {
 	margin: 0;
@@ -25,6 +26,26 @@ footer {
 	text-align: center;
 }
 
-.finished {background-color: #ccffcc;}
+button {
+	float: inline-end;
+}
 
-.received {background-color: #ccffff;}
+.dark {
+	color: white;
+	border: 4px double white;
+	background-color: black;
+}
+
+.finished {background-color: #cfc;}
+
+.received {background-color: #cff;}
+
+.dark a:link {color: #aff;}
+
+.dark a:visited {color: #faf;}
+
+.dark table { border: 4px white inset; }
+
+.dark .finished { background-color: #131; }
+
+.dark .received { background-color: #113; }

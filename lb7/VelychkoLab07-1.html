@@ -1,21 +1,22 @@
 <html>
 <head>
-     <TITLE> Використання cенсорних зображень </TITLE>
+     <TITLE>Форми в HTML</TITLE>
      <meta charset=UTF-8>
      <map name="map1">
 </head>
 <body>
+	<h2>Анкета студента</h2>
 	<form>
 		Ваше ім'я: <input name="name" type="text" maxlength="40" size="40" value=""><br>
-		Ваша стать:<input type="radio" name="pol" value="male">Чоловіча
-          <input type="radio" name="sex" value="female">Жіноча<br>
+		Ваша стать:<input type="radio" name="stat" value="male">Чоловіча
+          <input type="radio" name="stat" value="female">Жіноча<br>
 		На якому курсі Ви навчаєтесь?  
           <select name="year" size="1">
                <option value="1" selected>1</option>
                <option value="2">2</option>
                <option value="3">3</option>
                <option value="4">4</option>
-               <option value="5">5 </option>
+               <option value="5">5</option>
           </select><br>
 		Які дисципліни ви вивчаєте на курсі?
   		<input type="checkbox" name="webp" value="yes" checked> WEB-програмування
@@ -24,7 +25,7 @@
     		<textarea name="about" rows="6" cols="60" wrap="off"></textarea>
 		<p><input type="submit" value="Надіслати дані"></p>
      	<input type="reset" value="Очистити форму">
-     	<input type="file" name="friend" size="50" accept="припустимий тип файлу"> 
+     	<input type="file" name="text" size="50" accept=".txt"> 
 	</form>
 </body> 
 </html>
