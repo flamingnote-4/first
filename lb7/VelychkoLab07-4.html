@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Замовлення товару</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Форма замовлення товару</h2>
+        <form action="/lab7/additional/submit.html" method="get" target="_blank">
+            <label for="bank">Номер банківського рахунку</label>
+            <input type="text" id="bank" name="bank" maxlength="20" placeholder="Введіть номер рахунку">
+            <br>
+            <label for="usernum">Особистий номер користувача</label>
+            <input type="text" id="usernum" name="usernum" maxlength="20" placeholder="Введіть ваш номер">
+            <br>
+            <label for="products">Оберіть товари</label>
+            <select id="products" name="products" multiple size="4">
+                <option value="notebook">Ноутбук</option>
+                <option value="smartphone">Смартфон</option>
+                <option value="mouse">Комп'ютерна миша</option>
+                <option value="keyboard">Клавіатура</option>
+                <option value="monitor">Монітор</option>
+            </select>
+            <br>
+            <label for="comment">Коментар</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Ваші побажання або коментарі..."></textarea>
+
+            <div class="payment">
+                <label>Вид оплати</label>
+                <div class="radio-group">
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Готівковий</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="noncash" name="payment" value="noncash">
+                    <label for="noncash">Безготівковий</label>
+                </div>
+            </div>
+
+            <div class="options">
+                <label>Додаткова інформація, яку бажаєте отримати</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="balance" name="info_balance" value="yes">
+                    <label for="balance">Дані про залишки на рахунку</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="payments" name="info_payments" value="yes">
+                    <label for="payments">Список останніх виплат по рахунку</label>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <input type="reset" value="Очистити форму">
+                <input type="submit" value="Надіслати замовлення">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

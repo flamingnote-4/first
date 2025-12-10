@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Анкета</h2>
+        <form action="./submit.html" method="get" target="_blank">
+            <table border="2px">
+                <tr>
+                    <td>1.</td>
+                    <td>Прізвище</td>
+                    <td><input type="text" name="surname"></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Ім'я, по батькові</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Число і рік народження</td>
+                    <td><input type="text" name="birth"></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Домашня адреса</td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Місце навчання (роботи)</td>
+                    <td><input type="text" name="work"></td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Домашній (робочий) телефон</td>
+                    <td><input type="text" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>E-mail</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>Область наукових інтересів</td>
+                    <td>
+                        <ol style="margin: 0; padding-left: 20px;">
+                            <li><input type="text" name="interest1"></li>
+                            <li><input type="text" name="interest2"></li>
+                            <li><input type="text" name="interest3"></li>
+                            <li><input type="text" name="interest4"></li>
+                            <li><input type="text" name="interest5"></li>
+                            <li><input type="text" name="interest6"></li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="buttons">
+                <input type="reset" value="Відмінити введення"><br>
+                <input type="submit" value="Надіслати дані та перейти до 2 етапу реєстрації">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
