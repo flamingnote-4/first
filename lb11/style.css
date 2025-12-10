@@ -1,0 +1,46 @@
+body {
+    background-image: url("./pics/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: justify;
+    font-size: max(3vh, 12px);
+    width: 80%;
+    margin: auto;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: max(4vh, 16px);
+    color: darkred;
+}
+
+.wrapper {
+    background: rgba(255,255,210,0.8);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+}
+
+img {
+    max-height: max(30vh, 80px)
+}
+
+a:link{
+    color: rgb(128, 79, 0);
+    text-decoration:none;
+}
+a:active {
+    color: #ffaa00;
+    text-decoration:none;
+}
+a:visited {
+    color: rgb(139, 0, 0);
+    text-decoration:none;
+}
+a:hover {
+    color: rgb(255, 81, 0);
+    text-decoration:underline;
+}
