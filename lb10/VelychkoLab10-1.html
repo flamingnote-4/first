@@ -1,14 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./media-query.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розмітка: float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 3px;
+        }
+
+        body:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .blue {
+            background: blue;
+            height: 150px;
+            border: 1px solid #ccc;
+            margin-bottom: 3px;
+        }
+
+        .skyblue {
+            background: skyblue;
+            height: 150px;
+            border: 1px solid #ccc;
+            min-height: 100px;
+            margin-bottom: 3px;
+        }
+
+        .red {
+            background: red;
+            height: 150px;
+            border: 1px solid #ccc;
+            min-height: 100px;
+            margin-bottom: 3px;
+        }
+
+        .green {
+            background: green;
+            height: 150px;
+            border: 1px solid #ccc;
+            min-height: 100px;
+            margin-bottom: 3px;
+        }
+
+        .yellow {
+            background: yellow;
+            border: 1px solid #ccc;
+            min-height: 150px;
+            margin-bottom: 3px;
+        }
+
+        .grey {
+            background: grey;
+            border: 1px solid #ccc;
+            min-height: 150px;
+            margin-bottom: 3px;
+        }
+
+        .brown {
+            background: brown;
+            height: 100px;
+            border: 1px solid #ccc;
+            min-height: 80px;
+            clear: both;
+        }
+
+        .wrapper {
+            position: relative;
+        }
+
+        .grey {
+            width: 30%;
+            float: right;
+            height: 456px;
+        }
+
+        .main-content {
+            width: 70%;
+            float: left;
+        }
+
+        .yellow-container {
+            width: 30%;
+            float: right;
+            height: 303px;
+        }
+
+        .yellow {
+            height: 100%;
+        }
+
+        .content-with-yellow {
+            width: 70%;
+            float: left;
+        }
+
+        .skyblue {
+            width: 50%;
+            float: left;
+        }
+
+        .red {
+            width: 50%;
+            float: left;
+        }
+
+        .green {
+            clear: both;
+        }
+
+        @media (max-width: 499px) {
+
+            .grey,
+            .main-content,
+            .yellow-container,
+            .content-with-yellow,
+            .skyblue,
+            .red {
+                width: 100%;
+                float: none;
+                height: auto;
+                margin-top: 0;
+            }
+
+            .blue,
+            .skyblue,
+            .red,
+            .green {
+                height: 80px;
+            }
+
+            .grey,
+            .yellow {
+                height: 100px;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 749px) {
+
+            .grey,
+            .main-content,
+            .yellow-container,
+            .content-with-yellow {
+                width: 100%;
+                float: none;
+                height: auto;
+                margin-top: 0;
+            }
+
+            .grey,
+            .yellow {
+                height: 100px;
+            }
+        }
+
+        @media (min-width: 750px) and (max-width: 949px) {
+            .grey {
+                width: 25%;
+                height: 456px;
+            }
+
+            .main-content {
+                width: 75%;
+            }
+
+            .yellow-container {
+                width: 25%;
+                height: 303px;
+            }
+
+            .content-with-yellow {
+                width: 75%;
+            }
+        }
+
+        @media (min-width: 950px) and (max-width: 1199px) {
+            .grey {
+                width: 30%;
+                height: 456px;
+            }
+
+            .main-content {
+                width: 70%;
+            }
+
+            .yellow-container {
+                width: 30%;
+                height: 303px;
+            }
+
+            .content-with-yellow {
+                width: 70%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div id="wrapper">
-        <div class="red"></div>
+    <div class="wrapper">
+        <div class="grey"></div>
+        <div class="main-content">
+            <div class="blue"></div>
+            <div class="yellow-container">
+                <div class="yellow"></div>
+            </div>
+            <div class="content-with-yellow">
+                <div class="skyblue"></div>
+                <div class="red"></div>
+                <div class="green"></div>
+            </div>
+        </div>
+        <div class="brown"></div>
     </div>
 </body>
+
 </html>
