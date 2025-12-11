@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дивитися найкращі серіали онлайн</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="all-wrap">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="header__inner container">
+
+                <!-- Лого -->
+                <a href="/" class="header__logo">
+                    <img src="/lab13/src/images/logo.png" alt="UAKino">
+                </a>
+
+                <!-- Меню -->
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="/filmy/">Фільми</a></li>
+                        <li><a href="/seriesss/">Серіали</a></li>
+                        <li><a href="/cartoon/">Мультфільми</a></li>
+                        <li><a href="/animeukr/">Аніме</a></li>
+                        <li><a href="/selection">Підбірки</a></li>
+                        <li><a href="/comunity">Спільнота</a></li>
+                        <li><a href="/top">Топ 100</a></li>
+                        <li><a href="/currentyear">2025</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Іконки праворуч -->
+                <div class="header__icons">
+
+                    <!-- Пошук -->
+                    <a href="/search/" class="icon-btn" title="Пошук">
+                        <i class="fas fa-search"></i>
+                    </a>
+
+                    <!-- Мої списки -->
+                    <a class="icon-btn" href="/mylist/" title="Мої списки">
+                        <i class="fas fa-play"></i>
+                    </a>
+
+                    <!-- Авторизація -->
+                    <a href="/login/" class="icon-btn">
+                        <i class="fas fa-user"></i>
+                        <span>Авторизація</span>
+                    </a>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Основний контент -->
+        <main class="main-content">
+            <div class="full-wr">
+                <section class="content-block light-block">
+                    <div class="container">
+                        <div class="block-header">
+                            <h2 class="block-title">Фільми</h2>
+                            <a href="/all-movies" class="block-link">Всі новинки <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="movie-list">
+                            <div class="movie-item">
+                                <div class="movie-img">
+                                    <img src="./images/oppenheimer.jpg" alt="Оппенгеймер">
+                                    <div class="full-quality">1080p</div>
+                                </div>
+                                <a class="movie-title" href="./oppenheimer.html">Оппенгеймер</a>
+                                <div class="movie-desc">
+                                    <div class="movie-rating">⭐ 8.4</div>
+                                    <div class="movie-info">Біографічний фільм</div>
+                                </div>
+                            </div>
+                            <div class="movie-item">
+                                <div class="movie-img">
+                                    <img src="./images/cube.jpg" alt="Куб">
+                                    <div class="full-quality">1080p</div>
+                                </div>
+                                <a class="movie-title" href="/cube.html">Куб</a>
+                                <div class="movie-desc">
+                                    <div class="movie-rating">⭐ 6.6</div>
+                                    <div class="movie-info">Наукова фантастика, Хорор</div>
+                                </div>
+                            </div>
+                            <div class="movie-item">
+                                <div class="movie-img">
+                                    <img src="./images/socnet.jpg" alt="Соціальна мережа">
+                                    <div class="full-quality">1080p</div>
+                                </div>
+                                <a class="movie-title" href="/socnet.html">Соціальна мережа</a>
+                                <div class="movie-desc">
+                                    <div class="movie-rating">⭐ 7.8</div>
+                                    <div class="movie-info">Драма</div>
+                                </div>
+                            </div>
+                            <div class="movie-item">
+                                <div class="movie-img">
+                                    <img src="./images/homealone.jpg" alt="Один вдома">
+                                    <div class="full-quality">1080p</div>
+                                </div>
+                                <a class="movie-title" href="/homealone.html">Один вдома</a>
+                                <div class="movie-desc">
+                                    <div class="movie-rating">⭐ 7.6</div>
+                                    <div class="movie-info">Сімейний, Комедія</div>
+                                </div>
+                            </div>
+                            <div class="movie-item">
+                                <div class="movie-img">
+                                    <img src="./images/runningman.jpg" alt="Людина, що біжить">
+                                    <div class="full-quality">4K</div>
+                                </div>
+                                <a class="movie-title" href="/runningman.html">Людина, що біжить</a>
+                                <div class="movie-desc">
+                                    <div class="movie-rating">⭐ 6.4</div>
+                                    <div class="movie-info">Наукова фантастика, Трилер, Екшн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer-wr">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">UAKino</div>
+                    <ul class="footer-links">
+                        <li><a href="">Правовласник</a></li>
+                        <li><a href="">Новини</a></li>
+                        <li><a href="">Фільми торент</a></li>
+                        <li><a href="">Музика з фільмів</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="mailto:10alex0520@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer-text">ЮаКіно - в нас найбільше фільмів онлайн українською мовою в найкращій якості HD
+                    1080, 720p!</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
