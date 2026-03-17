@@ -56,7 +56,7 @@ i = 0
 for (i = 0; i < paragraphs.length; i++) {
     let paragraph = paragraphs[i];
     paragraph.onclick = function() {
-        paragraph.innerHTML = parseInt(paragraph.id)**2
+        paragraph.innerHTML = Math.pow(parseInt(paragraph.id), 2)
     }
 };
 
@@ -70,6 +70,7 @@ for (i = 0; i < divs.length; i++) {
 
     states[i] = true;
     let state = states[i]
+
     div.onclick = function() {
         state = !state
         let color
