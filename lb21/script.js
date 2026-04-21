@@ -23,17 +23,14 @@ const monthNames = [
     "грудня",
 ]
 function returnDate() {
+    console.log("Завдання 1")
     const d = new Date() 
     const format = `${d.getHours().toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')}:${d.getSeconds().toString().padStart(2, '0')}, ${weekdayNames[d.getDay()]}, ${d.getDate()} ${monthNames[d.getMonth()]} ${d.getFullYear()} року`
     console.log(format);
     return Date.now(format)
 }
 
-console.log("Завдання 1")
-returnDate()
-
 // 2
-console.log("Завдання 2")
 let numberToGuess = 0
 let guesses = 0
 let guess = 0
@@ -57,8 +54,12 @@ function getInput() {
     return guess
 }
 function checkGuess() {
+    let isGuessCorrectString = "не "
+    if (numberToGuess == guess) {
+        isGuessCorrectString = ""
+    }
     const d = new Date() 
-    const format = `${d.getDate().toString().padStart(2, '0')}.${d.getMonth().toString().padStart(2, '0')}.${d.getFullYear()} ${d.getHours().toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')}:${d.getSeconds().toString().padStart(2, '0')} Спроба ${guesses}: число ${guess} - не вірно.`
+    const format = `${d.getDate().toString().padStart(2, '0')}.${d.getMonth().toString().padStart(2, '0')}.${d.getFullYear()} ${d.getHours().toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')}:${d.getSeconds().toString().padStart(2, '0')} Спроба ${guesses}: число ${guess} - ${isGuessCorrectString}вірно.`
     console.log(format)
     const magnitude = Math.abs(numberToGuess-guess)
     if (magnitude > 13) {
@@ -73,6 +74,7 @@ function checkGuess() {
 }
 
 function game() {
+    console.log("Завдання 2")
     setupGame()
     while (guess != numberToGuess) {
         guess = getInput()
@@ -81,5 +83,3 @@ function game() {
     }
     alert(`Ви вгадали число ${numberToGuess}!\nКількість спроб: ${guesses}.`)
 }
-
-game()
