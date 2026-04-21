@@ -1,10 +1,50 @@
 body {
+	font-family: Arial;
+}
+
+#labcontainer {
 	width: min(600px, 90%);
 	margin: auto;
 	margin-top: 0.5em;
-	border: 4px double black;
+	border: 2px solid black;
+	border-radius: 8px;
 	padding: 1em;
-	font-family: Arial;
+}
+
+#labcontainer h1 {
+	margin-top: 0;
+	font-size: 1.5em;
+}
+
+.task {
+	background: linear-gradient(45deg, rgba(200,225,255,0.4), rgba(175,255,175,0.4));
+	border-radius: 8px;
+	padding: 8px;
+	border: 2px solid rgba(0,0,0,0.1);
+	display: flex;
+	margin-bottom: 8px;
+}
+.task h1, .task p{
+	margin-top: 0;
+	line-height: 1.5;
+}
+.task .console {
+	font-family: Consolas;
+	background-color: black;
+	color: paleturquoise;
+	padding: 6px;
+	border-radius: 4px;
+	font-size: 0.8em;
+}
+.action {
+	float: left;
+	width: 150px;
+	flex-shrink: 0;
+}
+.info {
+	padding-top: 4px;
+	padding-left: 16px;
+	padding-bottom: 8px;
 }
 
 h2 {
@@ -27,26 +67,6 @@ footer {
 	text-align: center;
 }
 
-button {
-	float: inline-end;
-}
-
-.dark {
-	color: white;
-	border: 4px double white;
-	background-color: black;
-}
-
 .finished {background-color: #cfc;}
 
 .received {background-color: #cff;}
-
-.dark a:link {color: #aff;}
-
-.dark a:visited {color: #faf;}
-
-.dark table { border: 4px white inset; }
-
-.dark .finished { background-color: #131; }
-
-.dark .received { background-color: #113; }
