@@ -3,10 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
   <title>Лабораторна робота №21</title>
 </head>
-<body>
-  <p>txt</p>
+<body id="labcontainer">
+  <h1>Лабораторна робота №7</h1>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 1</h1>
+      <button onclick="returnDate()">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Вивести поточний час у консоль.</p>
+      <p class="console">00:00:00, четвер, 1 січня 1970 року</p>
+    </div>
+  </div>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 2</h1>
+      <button onclick="game()">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Створити гру: необхідно вгадати число від 0 до 50, згенероване псевдовипадковим чином. Відхилення від числа супроводжувати словами "холодно", "тепло", "тепліше" та "гаряче".</p>
+      <p class="console">01.01.1970 00:00:00 Спроба n: число x - вірно / не вірно</p>
+    </div>
+  </div>
   <script src="./script.js"></script>
 </body>
 </html>
