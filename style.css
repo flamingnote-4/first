@@ -6,14 +6,26 @@ body {
 	width: min(600px, 90%);
 	margin: auto;
 	margin-top: 0.5em;
-	border: 2px solid black;
-	border-radius: 8px;
 	padding: 1em;
 }
 
 #labcontainer h1 {
 	margin-top: 0;
+	margin-bottom: 4px;
 	font-size: 1.5em;
+}
+
+#labcontainer h3 {
+	margin-top: 0;
+	font-size: 1em;
+}
+
+#labcontainer input[type="text"]{
+	margin-top: 2px;
+	margin-bottom: 4px;
+}
+#labcontainer input[type="radio"]{
+	margin-top: 8px;
 }
 
 .task {
@@ -23,23 +35,38 @@ body {
 	border: 2px solid rgba(0,0,0,0.1);
 	display: flex;
 	margin-bottom: 8px;
+	padding-right: 16px;
 }
 .task h1, .task p{
 	margin-top: 0;
 	line-height: 1.5;
+	text-align: justify;
 }
 .task .console {
-	font-family: Consolas;
+	font-family: "Consolas";
 	background-color: black;
 	color: paleturquoise;
 	padding: 6px;
 	border-radius: 4px;
 	font-size: 0.8em;
 }
+.task ul {
+	margin-left: 1.5em;
+	padding-left: 4px;
+}
+.task li {
+	line-height: 1.5;
+}
+.action textarea {
+	margin-top: 8px;
+	resize: none;
+	height: 50%;
+}
 .action {
 	float: left;
 	width: 150px;
 	flex-shrink: 0;
+	padding-right: 16px;
 }
 .info {
 	padding-top: 4px;
@@ -56,7 +83,7 @@ table {
 	border-collapse: collapse;
 	margin: auto;
 	line-height: 1em;
-	display: inline-flex;
+	width: 49%;
 }
 td {
 	margin: 0;
@@ -65,6 +92,10 @@ td {
 }
 footer {
 	text-align: center;
+}
+
+label {
+	text-align: none;
 }
 
 .finished {background-color: #cfc;}
