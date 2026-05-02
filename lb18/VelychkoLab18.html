@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Лабораторна робота №18</title>
+</head>
+<body id="labcontainer">
+  <h1>Лабораторна робота №4</h1>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 1</h1>
+      <input id="task1" type="text" placeholder="total"></input>
+      <button onclick="seconds(document.getElementById('task1').value)">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Напишіть функцію seconds, яка приймає числовий параметр total і повертає залишок від ділення числа total на 60.</p>
+      <p class="console">> seconds(115)<br>55</p>
+    </div>
+  </div>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 2</h1>
+      <input id="task21" type="text" placeholder="side (дійсне число)"></input>
+      <input id="task22" type="text" placeholder="count (ціле число)"></input>
+      <button onclick="perimeter(document.getElementById('task21').value, document.getElementById('task22').value)">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Напишіть функцію perimeter, яка підраховує периметр правильного багатокутника.</p>
+        <p class="console">> perimeter(50,5)<br>250</p>
+    </div>
+  </div>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 3</h1>
+      <input id="task3" type="text" placeholder="n"></input>
+      <button onclick="fizzbuzz(document.getElementById('task3').value)">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Напишіть функцію, що виводить в консоль числа від 1 до n, де n - це ціле число, яка функція приймає як параметр, з такими умовами:</p>
+      <ul>
+        <li>функція виводить fizz замість чисел, кратних 3</li>
+        <li>функція виводить buzz замість чисел, кратних 5</li>
+        <li>функція виводить fizzbuzz замість чисел, кратних як 3, так і 5</li>
+      </ul>
+        <p class="console">> fizzbuzz(5)<br>1<br>2<br>fizz<br>4<br>buzz</p>
+    </div>
+  </div>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 4</h1>
+      <input id="task41" type="text" placeholder="a"></input>
+      <input id="task42" type="text" placeholder="b"></input>
+      <input id="task43" type="text" placeholder="c"></input>
+      <button onclick="calculateAverage(document.getElementById('task41').value, document.getElementById('task42').value, document.getElementById('task43').value)">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Напишіть функцію calculate, яка приймає три параметри цілочислених значення та виводить на екран середнє арифметичне цих параметрів.</p>
+        <p class="console">> calculate(2,6,1)<br>3</p>
+    </div>
+  </div>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 5</h1>
+      <input name="task5type" value="A" type="radio" checked="true"><label>через if</label><br>
+      <input name="task5type" value="B" type="radio"><label>через тернарний оператор</label><br>
+      <input name="task5type" value="C" type="radio"><label>без if / тернарного оп.</label><br>
+      <input id="task51" type="text" placeholder="n"></input>
+      <input id="task52" type="text" placeholder="x"></input>
+      <input id="task53" type="text" placeholder="y"></input>
+      <button onclick="isDivisible(document.getElementById('task51').value, document.getElementById('task52').value, document.getElementById('task53').value)">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Напишіть функцію isDivisible (n, x, y), яка перевіряє, чи ділиться число n на два числа x і y. Всі вхідні параметри - це додатні числа.</p>
+        <p class="console">> isDivisible(12,3,4)<br>true</p>
+    </div>
+  </div>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 6</h1>
+      <input id="task6" type="text" placeholder="n"></input>
+      <button onclick="initArray(document.getElementById('task6').value)">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Створити масив розмірністю N елементів, заповнити його довільними цілими значеннями. Вивести найбільше значення масиву, найменше значення масиву, загальну суму елементів, середнє арифметичне всіх елементів, вивести непарні значення.</p>
+        <p class="console">> initArray(10)<br>
+            Завдання 6<br>
+            Масив: 2,5,2,9,10,7,5,6,7,4<br>
+            Найбільше значення масиву: 10<br>
+            Найменше значення масиву: 2<br>
+            Сума елементів: 57<br>
+            Середнє арифметичне: 5.7<br>
+            Непарні значення масиву: 5,9,7,5,7
+        </p>
+    </div>
+  </div>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 7</h1>
+        <button onclick="init2DArray()">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Створити двовимірний масив елементів розмірністю 5х5 і заповнити його довільними цілочисельними значеннями. По головній діагоналі всі числа зі знаком (-) замінити на 0, а числа зі знаком (+) на число 1</p>
+      <p class="console">> init2DArray()<br>До заміни:<br>
+        -1,0,1,2,0<br>
+        4,-4,0,1,3<br>
+        2,-4,-4,-4,1<br>
+        -4,4,-2,5,-4<br>
+        3,0,0,-1,5<br>
+        <br>
+        Після заміни:<br>
+        0,0,1,2,0<br>
+        4,0,0,1,3<br>
+        2,-4,0,-4,1<br>
+        -4,4,-2,1,-4<br>
+        3,0,0,-1,1</p>
+    </div>
+  </div>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 8</h1>
+      <input id="task81" type="text" placeholder="a"></input>
+      <input id="task82" type="text" placeholder="b"></input>
+      <select>
+        <option>Add</option>
+        <option>Sub</option>
+        <option>Mul</option>
+        <option>Div</option>
+      </select>
+      <button onclick="doOperation(document.getElementById('task81').value, document.getElementById('task82').value)">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Створіть чотири функції для арифметичних операцій:</p>
+        <ul>
+          <li>Add - додавання</li>
+          <li>Sub - віднімання</li>
+          <li>Mul - множення</li>
+          <li>Div - ділення</li>
+        </ul>
+        <p>
+          Кожна функція повинна приймати два параметри и виводити на екран результат обчислення. Функція ділення  повинна виконувати перевірку на нуль. Користувач вводить значення, над якими хоче провести операцію і робить вибірку самої операції.
+        </p>
+        <p class="console">> Add(5,7)<br>
+          12
+        </p>
+    </div>
+  </div>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 9</h1>
+      <input id="task9" type="text" placeholder="n"></input>
+      <button onclick="check(document.getElementById('task9').value)">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Напишіть функцію, яка буде приймати число і визначати:</p>
+      <ul>
+        <li>Чи є введене число від'ємним</li>
+        <li>Чи є число простим</li>
+        <li>Чи ділиться число націло на 2, 3, 5, 6, 9</li>
+      </ul>
+      <p class="console">> check(7)<br>Число не ділиться на 2, 3, 5, 6 та 9 без залишку.<br>
+        Число невід'ємне.<br>
+        Число є простим.</p>
+    </div>
+  </div>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 10</h1>
+      <input id="task10" type="text" placeholder="a,b,c"></input>
+      <button onclick="rotateAndSquare(document.getElementById('task10').value)">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Створити функцію яка приймає параметром масив і повертає перевернутий масив, всі числові значення масиву підносяться до квадрату, значення всіх інших елементів залишається без змін. </p>
+      <p class="console">> rotateAndSquare("2,5,7,текст")<br>
+      4,25,49,"текст"
+      </p>
+    </div>
+  </div>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 11</h1>
+      <input id="task11" type="text" placeholder="a,b,c"></input>
+      <button onclick="removeDuplicates(document.getElementById('task11').value)">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Напишіть функцію, яка видаляє дублікати в масиві.</p>
+      <p class="console">> rotateAndSquare("1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6")<br>
+      [1, 2, 4, 5, 7, 8, 3, 6]
+      </p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
