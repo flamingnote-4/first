@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="gamegrid"></div>
+        <div class="statusbar">
+            <span id="timer">01:00</span>
+            <p id="statusmsg">Ви виграли!</p>
+            <button onclick="initialize()" id="restart">Рестарт</button>
+        </div>  
+        <div class="leaderboard">
+            <table>
+                <tr>
+                    <th style="width: 33%;">Номер гри</th>
+                    <th style="width: 33%;">Час гри</th>
+                    <th style="width: 33%;">Кількість</th>
+                </tr>
+            </table>
+        </div>    
+    </div>
+</body>
+</html>
