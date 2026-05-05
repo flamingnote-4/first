@@ -15,7 +15,7 @@ function initialize() {
 
     let gridSize = parseInt($("#gridsize").val())
     tileCount = gridSize**2
-    $(".gamegrid").css("grid-template-columns", `repeat(${gridSize}, minmax(50px, 1fr))`)
+    $(".gamegrid").css("grid-template-columns", `repeat(${gridSize}, minmax(30px, 1fr))`)
 
     time = startingTime
     gameNumber++

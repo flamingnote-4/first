@@ -15,7 +15,7 @@ body {
     height: 400px;
     display: grid;
     gap: 4px;
-    grid-template-columns: repeat(5, minmax(50px, 1fr));
+    grid-template-columns: repeat(5, minmax(30px, 1fr));
 }
 
 .gamegrid > * {
