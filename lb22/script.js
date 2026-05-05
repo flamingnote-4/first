@@ -50,7 +50,7 @@ function addMessage() {
         messageTime.text("Програш.")
     } else {
         messageTime.text(startingTime-time-1 + " с")
-        if (time > bestTime) {
+        if (time > bestTime && !gameRunning) {
             bestTime = time
             $(".bestscore").removeClass("bestscore")
             message.addClass("bestscore")
@@ -60,7 +60,9 @@ function addMessage() {
         messageProgress.append(" (рестарт)")
     }
     message.append(messageNumber, messageTime, messageProgress)
-    $(".leaderboard table").append(message)
+    
+    let header = $("#tablehead")
+    header.after(message)
 }
 
 function loss() {
