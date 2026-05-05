@@ -1,5 +1,5 @@
-const startingTime = 60
-const tileCount = 25
+let startingTime = 60
+let tileCount = 25
 let time = startingTime
 let progress = 1
 let gameRunning = false
@@ -12,6 +12,10 @@ function initialize() {
     if (gameRunning) {
         addMessage()
     }
+
+    let gridSize = parseInt($("#gridsize").val())
+    tileCount = gridSize**2
+    $(".gamegrid").css("grid-template-columns", `repeat(${gridSize}, minmax(50px, 1fr))`)
 
     time = startingTime
     gameNumber++

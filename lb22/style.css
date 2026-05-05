@@ -11,23 +11,21 @@ body {
 }
 
 .gamegrid {
-    padding: 4px;
-    display: grid;
     width: 400px;
     height: 400px;
-    gap: 5px 5px;
-    grid-template-columns: auto auto auto auto auto;
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(5, minmax(50px, 1fr));
 }
 
-.gamegrid * {
-    width: 75px;
-    height: 75px;
+.gamegrid > * {
+    margin: 0;
+    aspect-ratio: 1/1;
     background-color: #eee;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
 }
 
 .toggled {
