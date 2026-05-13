@@ -114,16 +114,16 @@ function initArray(n) {
 
     average = sum/N
 
-    console.log(`Завдання 6
+    let result = `Завдання 6
     Масив: ${array}
     Найбільше значення масиву: ${max}
     Найменше значення масиву: ${min}
     Сума елементів: ${sum}
     Середнє арифметичне: ${average}
     Непарні значення масиву: ${oddValues}
-    `)
+    `
 
-    alert("Результат у консолі.")
+    alert(result)
 }
 
 // 7
@@ -149,7 +149,6 @@ function init2DArray() {
         s += "\n"
     }
 
-    console.log(s)
     alert(s)
 }
 // 8
