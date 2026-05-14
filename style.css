@@ -24,6 +24,9 @@ body {
 	margin-top: 2px;
 	margin-bottom: 4px;
 }
+#labcontainer button{
+	margin-bottom: 12px;
+}
 #labcontainer input[type="radio"]{
 	margin-top: 8px;
 }
@@ -40,7 +43,6 @@ body {
 .task h1, .task p{
 	margin-top: 0;
 	line-height: 1.5;
-	text-align: justify;
 }
 .task .console {
 	font-family: "Consolas";
