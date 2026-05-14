@@ -1,0 +1,15 @@
+{
+  "name": "lb19",
+  "version": "1.0.0",
+  "description": "ajax",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "console.log(\"Test\")"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

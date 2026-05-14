@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Лабораторна робота №5</title>
+  <link rel="stylesheet" href="./style.css"></style>
+</head>
+<body id="labcontainer">
+  <p>todo: make this work on github pages as well</p>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання</h1>
+      <input id="input" type="text" placeholder="n"></input>
+      <button onclick="getSquare(document.getElementById('input').value)">Отримати квадрат числа</button>
+      <p id="result"></p>
+    </div>
+    <div class="info">
+      <p>Засобами технології AJAX розробити односторінковий веб-додаток.</p>
+      <ul>
+        <li>На front-стороні забезпечити ввід числа та вивід текстової інформації про квадрат цього числа</li>
+        <li>На серверній стороні забезпечити отримання даних про число за технологією AJAX, обрахунок квадрату числа, та надання відповіді.</li>
+      </ul>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
