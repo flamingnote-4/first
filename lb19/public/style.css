@@ -59,6 +59,9 @@ body {
 .task li {
 	line-height: 1.5;
 }
+.warning {
+	background: linear-gradient(45deg, rgba(255,220,200,0.4), rgba(255,255,200,0.4));
+}
 .action textarea {
 	margin-top: 8px;
 	resize: none;
