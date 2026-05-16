@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Лабораторна робота №20</title>
+</head>
+<body id="labcontainer">
+  <h1>Лабораторна робота №6</h1>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 1</h1>
+      <button onclick="getWeekday()">Виконати</button>
+    </div>
+    <div class="info">
+      <p>Створити модульне вікно, що питає мову користувача, і в залежності від заданого користувачем числа (1 - 7) виводить день тижня обраною мовою. Інформація про мову / день тижня береться з одного об'єкту.</p>
+    </div>
+  </div>
+  <div class="task">
+    <div class="action">
+      <h1>Завдання 2</h1>
+      <button onclick="game()">Виконати</button>
+      <textarea id="task2"></textarea>
+    </div>
+    <div class="info">
+      <p>Створити програму, що вираховує, скільки електрики необхідно закупити / продати вдень і вночі для забезпечення балансу.</p>
+      <p>У місті можуть бути:</p>
+      <ul>
+        <li><span class="console">pp</span> Електростанції (1-100 МВт)</li>
+        <li><span class="console">sol</span> Сонячні панелі (1-5 МВт, тільки вдень)</li>
+        <li><span class="console">h</span> Житлові будинки (1-400 квартир; одна квартира споживає 4 кВт вдень та 1 кВт вночі)</li>
+        <li><span class="console">opl</span> Лінії електропередач</li>
+      </ul>
+      <p>Формат:</p>
+      <p class="console">
+        pp : [вт] : [кількість]<br>
+        h : [число квартир] : [кількість]<br>
+        opl : [макс.вт] : [ціна] : [кількість]
+      </p>
+      <p>Приклад вводу:</p>
+      <p class="console">
+        sol:4:20, h:300:300, pp:100:2, opl:2:10:55
+      </p>
+    </div>
+  </div>
+  <script src="./classes.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
