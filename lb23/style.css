@@ -1,0 +1,60 @@
+body {
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.gamegrid {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(5, minmax(30px, 1fr));
+}
+
+.gamegrid > * {
+    margin: 0;
+    aspect-ratio: 1/1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width:100%;
+    max-height:100%;
+}
+
+.toggled {
+    color: white !important;
+}
+
+.statusbar {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statusbar * {
+    width: 125px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#statusmsg {
+    margin: 0;
+    background-color: #bbb;
+    padding: 6px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.win {
+    background-color: #3b3 !important;
+}

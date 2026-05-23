@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №9</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="matchPicDock">
+        <img id="matchPic">
+    </div>
+    <div class="container">
+        <div class="gamegrid"></div>
+        <div class="statusbar">
+            <p id="statusmsg">Ви виграли!</p>
+            <select id="gridsize">
+                <option>3</option>
+                <option>4</option>
+                <option selected>5</option>
+                <option>6</option>
+                <option>7</option>
+            </select>
+            <select id="category">
+                <option value="animals" selected>Тварини</option>
+                <option value="bugs">Комахи</option>
+                <option value="fish">Риби</option>
+            </select>
+            <button onclick="initialize()" id="restart">Почати знову</button>
+        </div>   
+    </div>
+</body>
+</html>
