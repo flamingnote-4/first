@@ -74,7 +74,7 @@ function initialize() {
         $(".gamegrid").append(element)
     }
 
-    matchPic.attr("src", `./assets/animals/${array[picsRemaining]}.png`)
+    matchPic.attr("src", `./assets/${category}/${array[picsRemaining]}.png`)
     matchPic.css("height", `${$(`#${array[1]}`).height()}px`)
 
     gameRunning = true
